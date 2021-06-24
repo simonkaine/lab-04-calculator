@@ -95,5 +95,22 @@ modBtn.addEventListener('click', ()=> {
 });
 
 // ----------------------------------------------- Integer Division
+
+
 // ----------------------------------------------- hypotenuse
 
+const side1 = document.getElementById('side-num1');
+const side2 = document.getElementById('side-num2');
+const hypoAnswerSpan = document.getElementById('hypo-answer');
+const hypoBtn = document.getElementById('hypo-btn');
+
+hypoBtn.addEventListener('click', () => {
+    const base = (side1.value);
+    const perpendicular = (side2.value);
+    const bSquare = (base ** 2);
+    const pSquare = (perpendicular ** 2);
+    const sum = (bSquare + pSquare);
+    const hypotenuse = Math.sqrt(sum);
+    console.log(hypotenuse);
+    hypoAnswerSpan.innerText = hypotenuse;
+});
