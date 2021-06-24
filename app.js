@@ -81,5 +81,19 @@ divideBtn.addEventListener('click', ()=> {
 
 // ----------------------------------------------- Modulo
 
+const modInput1 = document.getElementById('mod-num1');
+const modInput2 = document.getElementById('mod-num2');
+const modAnswerSpan = document.getElementById('mod-answer');
+const modBtn = document.getElementById('mod-btn');
+
+modBtn.addEventListener('click', ()=> {
+    const mod1 = (modInput1.value);
+    const mod2 = (modInput2.value);
+    const modAnswer = (mod1 % mod2);
+    console.log(modAnswer);
+    modAnswerSpan.innerText = modAnswer;
+});
+
 // ----------------------------------------------- Integer Division
 // ----------------------------------------------- hypotenuse
+
