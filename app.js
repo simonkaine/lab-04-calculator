@@ -96,6 +96,18 @@ modBtn.addEventListener('click', ()=> {
 
 // ----------------------------------------------- Integer Division
 
+const divIntInput1 = document.getElementById('divInt-num1');
+const divIntInput2 = document.getElementById('divInt-num2');
+const divIntAnswerSpan = document.getElementById('divInt-answer');
+const divIntBtn = document.getElementById('divInt-btn');
+
+divIntBtn.addEventListener('click', ()=> {
+    const divInt1 = (divIntInput1.value);
+    const divInt2 = (divIntInput2.value);
+    const divIntAnswer = Math.floor(divInt1 / divInt2);
+    console.log(divIntAnswer); 
+    divIntAnswerSpan.textContent = divIntAnswer;
+});
 
 // ----------------------------------------------- hypotenuse
 

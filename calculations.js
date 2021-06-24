@@ -18,7 +18,10 @@ export function modulo(num1, num2) {
     return num1 % num2;
 }
 
-export function hypotenuseTest(num1, num2) {
-
+export function hypotenuseTest() {
     return hypotenuse;
+}
+
+export function IntegerDivision(num1, num2) {
+    return Math.floor(num1 / num2);
 }
