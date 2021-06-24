@@ -3,6 +3,7 @@ import { subtract } from '../calculations.js';
 
 const test = QUnit.test;
 
+
 // name your test by what it is testing
 test('test subtract', (expect) => {
     //Arrange
@@ -11,7 +12,7 @@ test('test subtract', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = (4 - 2); // use your function here
+    const actual = (4 - 1); // use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result
