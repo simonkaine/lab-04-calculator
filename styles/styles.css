@@ -77,7 +77,7 @@ button {
 main {
     background: linear-gradient(to left, #333, #333 25%, #eee 75%, #333 100%);
     background-image: url(../assets/space.jpg); 
-    background-repeat: no-repeat;
+    
     /* free image courtesy of stockvault.net  */
 }
 
