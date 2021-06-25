@@ -43,7 +43,7 @@ footer {
     background-color: black;
     margin: 10%;
     border-radius: 60%;
-    background-image: url(/assets/space.jpg); /* image found at stockvault.net  */
+    background-image: url(../assets/space.jpg); /* image found at stockvault.net  */
     
 }
 
@@ -78,7 +78,7 @@ button {
 
 main {
     background: linear-gradient(to left, #333, #333 25%, #eee 75%, #333 100%);
-    background-image: url(/assets/spaceBig.jpeg); 
+    background-image: url(../assets/spaceBig.jpeg); 
     background-image: cover;
     /* image courtesy of https://valheart.com/highly-sensitive-people-empaths-have-unique-gifts/ */
 }
