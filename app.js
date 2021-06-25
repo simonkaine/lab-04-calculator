@@ -2,6 +2,12 @@
 // import add function
 
 import { add } from "./calculations.js";
+import { subtract } from "./calculations.js";
+import { multiply } from "./calculations.js";
+import { division } from "./calculations.js";
+import { modulo } from "./calculations.js";
+import { integerDivision } from "./calculations.js";
+import { hypotenuseTest } from "./calculations.js";
 
 // reference needed DOM elements
 // input 1, input 2. answer span, add button
@@ -43,7 +49,7 @@ const subBtn = document.getElementById("sub-btn");
 subBtn.addEventListener("click", ()=> {
     const sub1 = Number(subInput1.value);
     const sub2 = Number(subInput2.value);
-    const subAnswer = (sub1 - sub2);
+    const subAnswer = subtract(sub1, sub2);
     console.log(subAnswer);
     subAnswerSpan.textContent = subAnswer;
 
@@ -59,7 +65,7 @@ const multiplyBtn = document.getElementById('multiply-btn');
 multiplyBtn.addEventListener('click', ()=> {
     const multiply1 = (multiplyInput1.value);
     const multiply2 = (multiplyInput2.value);
-    const multiplyAnswer = (multiply1 * multiply2);
+    const multiplyAnswer = multiply(multiply1, multiply2);
     console.log(multiplyAnswer);
     multiplyAnswerSpan.textContent = multiplyAnswer;
 });
@@ -74,7 +80,7 @@ const divideBtn = document.getElementById('divide-btn');
 divideBtn.addEventListener('click', ()=> {
     const div1 = (divideInput1.value);
     const div2 = (divideInput2.value);
-    const divAnswer = (div1 / div2);
+    const divAnswer = division(div1, div2);
     console.log(divAnswer); 
     divideAnswerSpan.textContent = divAnswer;
 });
@@ -89,7 +95,7 @@ const modBtn = document.getElementById('mod-btn');
 modBtn.addEventListener('click', ()=> {
     const mod1 = (modInput1.value);
     const mod2 = (modInput2.value);
-    const modAnswer = (mod1 % mod2);
+    const modAnswer = modulo(mod1, mod2);
     console.log(modAnswer);
     modAnswerSpan.innerText = modAnswer;
 });
@@ -104,7 +110,7 @@ const divIntBtn = document.getElementById('divInt-btn');
 divIntBtn.addEventListener('click', ()=> {
     const divInt1 = (divIntInput1.value);
     const divInt2 = (divIntInput2.value);
-    const divIntAnswer = Math.floor(divInt1 / divInt2);
+    const divIntAnswer = integerDivision(divInt1, divInt2);
     console.log(divIntAnswer); 
     divIntAnswerSpan.textContent = divIntAnswer;
 });
@@ -119,10 +125,18 @@ const hypoBtn = document.getElementById('hypo-btn');
 hypoBtn.addEventListener('click', () => {
     const base = (side1.value);
     const perpendicular = (side2.value);
-    const bSquare = (base ** 2);
-    const pSquare = (perpendicular ** 2);
-    const sum = (bSquare + pSquare);
-    const hypotenuse = Math.sqrt(sum);
+    const hypotenuse = hypotenuseTest(base, perpendicular);
     console.log(hypotenuse);
     hypoAnswerSpan.innerText = hypotenuse;
 });
+
+// hypoBtn.addEventListener('click', () => {
+//     const base = (side1.value);
+//     const perpendicular = (side2.value);
+//     const bSquare = (base ** 2);
+//     const pSquare = (perpendicular ** 2);
+//     const sum = (bSquare + pSquare);
+//     const hypotenuse = Math.sqrt(sum);
+//     console.log(hypotenuse);
+//     hypoAnswerSpan.innerText = hypotenuse;
+// });
