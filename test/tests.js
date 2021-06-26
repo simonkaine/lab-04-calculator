@@ -11,14 +11,14 @@ import { integerDivision } from '../calculations.js';
 const test = QUnit.test;
 
 // name your test by what it is testing
-test('test hypotenuse', (expect) => {
+test('FAILING test hypotenuse', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = 10;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = hypotenuseTest(8, 6); // use your function here
+    const actual = hypotenuseTest(9, 2); // use your function here
     
 
     //Expect
@@ -27,10 +27,10 @@ test('test hypotenuse', (expect) => {
     
 });
 
-test('test add', (expect) => {
+test(' FAILING test add', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 4;
+    const expected = 7;
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -43,10 +43,10 @@ test('test add', (expect) => {
     
 });
 
-test('test subtract', (expect) => {
+test('FAILING test subtract', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 5;
+    const expected = 22;
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -59,10 +59,10 @@ test('test subtract', (expect) => {
     
 });
 
-test('test multiply', (expect) => {
+test('FAILING test multiply', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 25;
+    const expected = 12;
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -75,10 +75,10 @@ test('test multiply', (expect) => {
     
 });
 
-test('test division', (expect) => {
+test('FAILING test division', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 7;
+    const expected = 7.01;
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -91,10 +91,10 @@ test('test division', (expect) => {
     
 });
 
-test('test modulo', (expect) => {
+test('FAILING test modulo', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 1;
+    const expected = 111;
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -107,10 +107,10 @@ test('test modulo', (expect) => {
     
 });
 
-test('test Integer Division', (expect) => {
+test('FAILING test Integer Division', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 6;
+    const expected = 6.6;
     
     //Act 
     // Call the function you're testing and set the result to a const
